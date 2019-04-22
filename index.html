@@ -1,0 +1,121 @@
+<!-- Jalal Maqdisi (jalmaq01) This file contains styled form -->
+<!-- I confirm that this coursework submission is entirely my own work, except where explicitly stated otherwise. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>IWT | CW2 | jalmaq01</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Search</a></li>
+            </ol>
+        </nav>
+        <h2 class="text-center">Academy Awards (Oscars) from 1960 to 2010</h2>
+        <hr />
+        <div class="row">
+            <div class="col-sm"></div>
+                <div class="col-6">
+                <form action="process.php" method="post">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col col-lg">
+                                <label for="year">Year:</label>
+                            </div>
+                            <div class="col col-lg">
+                                <select class="form-control" name="yearProcessed">
+                                    <option>Contains</option>
+                                    <option>None</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="text" class="form-control" id="year" name="year" placeholder="Enter year">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col col-lg">
+                                <label for="category">Category:</label>
+                            </div>
+                            <div class="col col-lg">
+                                <select class="form-control" name="categoryProcessed">
+                                    <option>Contains</option>
+                                    <option>None</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="text" class="form-control" id="category" name="category" placeholder="Enter category">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col col-lg">
+                                <label for="info">Info:</label>
+                            </div>
+                            <div class="col col-lg">
+                                <select class="form-control" id="infoProcessed" name="infoProcessed">
+                                    <option>Contains</option>
+                                    <option>None</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="text" class="form-control" id="info" name="info" placeholder="Enter info">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col col-lg">
+                                <label for="info">Nominee:</label>
+                            </div>
+                            <div class="col col-lg">
+                                <select class="form-control" name="nomineeProcessed">
+                                    <option>Contains</option>
+                                    <option>None</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="text" class="form-control" id="nominee" name="nominee" placeholder="Enter nominee">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="row">
+                                <div class="col col-lg">
+                                    <label for="info">Won?:</label>
+                                </div>
+                                <div class="col-md-auto"></div>
+                                    <div class="col col-lg">
+                                        <label class="radio-inline"><input type="radio" name="wonradio" value="" checked> All</label>
+                                    </div>
+                                    <div class="col col-lg">
+                                        <label class="radio-inline"><input type="radio" name="wonradio" value="yes"> Yes</label>
+                                    </div>
+                                    <div class="col col-lg">
+                                        <label class="radio-inline"><input type="radio" name="wonradio" value="no"> No</label>
+                                    </div>
+                                
+
+                            </div>
+                        </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </form>
+                </div>
+                
+            <div class="col-sm"></div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <p>I, Jalal Maqdisi, confirm that this coursework submission is entirely my own work, except where explicitly stated otherwise.</p>
+        </div>
+    </div> 
+</body>
+</html>
