@@ -4,6 +4,7 @@
 // start processing the form data
 
 $year = ($_POST['yearProcessed'] == 'Contains' && $_POST['year']) ? $_POST['year'] : "";
+$category = ($_POST['categoryProcessed'] == 'Contains' && $_POST['category']) ? $_POST['category'] : "";
 $info = ($_POST['infoProcessed'] == 'Contains' && $_POST['info']) ? $_POST['info'] : "";
 $nominee = ($_POST['nomineeProcessed'] == 'Contains' && $_POST['nominee']) ? $_POST['nominee'] : "";
 $won = ($_POST['wonradio'])? $_POST['wonradio']: "";
